@@ -20,10 +20,15 @@ function ValidPassword(password, username){
         return false;
 
     } 
-     if(username.includes(" "))
+    if(password.includes(" "))
      {
         return false;
 
+     }
+
+    if(password.includes(username))
+     {
+        return false;
      }
         
     
